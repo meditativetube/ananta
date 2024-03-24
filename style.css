@@ -139,7 +139,7 @@ body{
     cursor: pointer;
     background-size: cover;
     opacity: .5;
-    transition: opacity 2s linear;
+    transition: opacity 1s linear;
 }
 .profile:hover{
     opacity: 1;
