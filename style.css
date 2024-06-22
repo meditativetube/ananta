@@ -279,11 +279,13 @@ body{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 100px;
         gap: 20px;
+        margin-bottom:10px;
     }
     .btn-box a {
         width: 100%;
+        height:100%
     }
     .profile {
         background: none;
