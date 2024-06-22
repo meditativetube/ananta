@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 body{
     background-color: #081b29;
@@ -11,17 +12,17 @@ body{
     position:relative;
     top: 0;
     left: 0;
-    padding: 1px 10%;
+    padding: 1vh 10%;
     background:transparent;
-    z-index: 100;
+    /* z-index: 100; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo{
     background-image: url(img.png);
-    height: 140px;
-    width: 140px;
+    height: 20vh;
+    width: 20vh;
     background-size: cover;
     cursor: pointer;
 }
@@ -35,9 +36,9 @@ body{
 .header ul li a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 3vh;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 5vh;
     transition: 0.3s;
 }
 .header ul li a:hover{
@@ -48,34 +49,36 @@ body{
 
 .content{
     padding: 1px 10%;
-    padding-right: 20px;
-    margin-bottom: 10px;
+    padding-right: 25vh;
+    margin-bottom: 10vh;
     height: 100%;
+    width: 100%;
 }
 
 /* Home */
 .home{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding-left: 5%;
     background: transparent;
 }
-.home-content{
-    max-width: 600px;
+.home .home-content{
+    max-width: 100vh;
 }
 .home-content h1{
-    font-size: 56px;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 1.2;
 }
 .home-content h3{
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
     color: #00abf0;
 }
 .home-content p{
-    font-size: 16px;
-    margin: 20px 0 40px;
+    font-size: 1rem;
+    margin: 4vw 0 4vw;
     word-spacing: 2px;
     
 }
@@ -139,7 +142,7 @@ body{
     cursor: pointer;
     background-size: cover;
     opacity: .5;
-    transition: opacity 1s linear;
+    transition: opacity 2s linear;
 }
 .profile:hover{
     opacity: 1;
@@ -254,6 +257,7 @@ body{
     text-align: justify;
 
 }
+/* Add a media query for mobile devices */
 @media (max-width: 768px) {
     /* Adjust the height and width of the circle */
     .circle {
