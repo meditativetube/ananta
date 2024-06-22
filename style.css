@@ -233,33 +233,46 @@
         text-align: justify;
     }
 
-    @media (max-width: 768px) {
-        /* Adjust header logo size */
-        .logo {
-            height: 100px;
-            width: 100px;
-        }
-        /* Adjust home content heading and buttons */
+    /* Responsive Design */
+    @media (max-width: 1024px) {
         .home-content h1 {
-            font-size: 32px;
+            font-size: 48px;
         }
         .home-content h3 {
-            font-size: 24px;
+            font-size: 30px;
+        }
+        .profile {
+            width: 100%;
+            height: 50vh;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header ul {
+            flex-direction: column;
+            align-items: center;
+        }
+        .header ul li {
+            margin: 10px 0;
+        }
+        .home-content h1 {
+            font-size: 40px;
+        }
+        .home-content h3 {
+            font-size: 28px;
         }
         .home-content .btn-box {
-            justify-content: center;
+            width: 100%;
+            flex-direction: column;
         }
         .home-content .btn-box a {
-            width: 120px;
-            height: 40px;
-            font-size: 16px;
+            width: 80%;
+            margin: 10px 0;
         }
-        /* Adjust profile image */
         .profile {
             height: 50vh;
             width: 100%;
         }
-        /* Adjust about section */
         .about .about-sec h1,
         .about .about-sec p {
             text-align: center;
@@ -278,9 +291,41 @@
         .abt-btn-box .more {
             font-size: 16px;
         }
-        /* Adjust service section */
         .service .service-cont {
             margin-right: 0;
-            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header ul li a {
+            font-size: 16px;
+            margin-left: 15px;
+        }
+        .home-content h1 {
+            font-size: 32px;
+        }
+        .home-content h3 {
+            font-size: 24px;
+        }
+        .home-content p {
+            font-size: 14px;
+        }
+        .home-content .btn-box a {
+            font-size: 16px;
+            width: 70%;
+            margin: 10px 0;
+        }
+        .profile {
+            height: 40vh;
+        }
+        .about .about-sec p {
+            margin-top: 10px;
+        }
+        .abt-btn-box div {
+            height: 35px;
+            width: 140px;
+        }
+        .abt-btn-box .more {
+            font-size: 14px;
         }
     }
